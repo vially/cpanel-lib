@@ -5,7 +5,7 @@ Node.js library for the cPanel/WHM API
     $ npm install cpanel-lib
 
 ## Usage
-    ```js
+    ``` js
     var cpanel = require('cpanel-lib');
     
     var options = {
