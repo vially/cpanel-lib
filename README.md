@@ -5,6 +5,7 @@ Node.js library for the cPanel/WHM API
     $ npm install cpanel-lib
 
 ## Usage
+    ```js
     var cpanel = require('cpanel-lib');
     
     var options = {
@@ -17,10 +18,20 @@ Node.js library for the cPanel/WHM API
 
     var cpanelClient = cpanel.createClient(options);
 
-    cpanelClient.call('version', {}, function (result) {
-      console.log('WHM Version: %j', result.version);
+    cpanelClient.call('version', {}, function (err, res) {
+      console.log('WHM Version: %j', res.version);
     });
 
-    cpanelClient.call('listaccts', {}, function (result) {
-      console.log('Result: %j', result);
+    cpanelClient.call('listaccts', {}, function (err, res) {
+      console.log('Result: %j', res);
     });
+
+    cpanelClient.callApi2('AddonDomain', 'listaddondomains', {}, function (err, res) {
+      console.log('Result: %j', res);
+    });
+    ```
+
+## API
+    cpanelClient.call(action, params, callback)
+    cpanelClient.callApi1(module, func, args, [user], callback)
+    cpanelClient.callApi2(module, func, args, [user], callback)
