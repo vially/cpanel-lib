@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/vially/cpanel-lib.png)](http://travis-ci.org/vially/cpanel-lib)
 Node.js library for the cPanel/WHM API
 =====
 
