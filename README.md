@@ -14,7 +14,8 @@ var options = {
     port: 2087,
     secure: true,
     username: 'WHM_USERNAME',
-    accessKey: 'YOUR_ACCESS_KEY'
+    accessKey: 'YOUR_ACCESS_KEY',
+    ignoreCertError: true
 };
 
 var cpanelClient = cpanel.createClient(options);
