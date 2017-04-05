@@ -2,7 +2,7 @@
   "author": "Valentin-Costel Hăloiu <vially.ichb@gmail.com>",
   "name": "cpanel-lib",
   "description": "Node.js library for the cPanel/WHM API",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/vially/cpanel-lib",
   "repository": {
     "type": "git",
